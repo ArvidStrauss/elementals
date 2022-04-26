@@ -50,7 +50,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10%;
+  bottom: 0%;
 }
 
 .link7 {
@@ -87,7 +87,6 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -10%;
 }
 
 .modal-dialog {
