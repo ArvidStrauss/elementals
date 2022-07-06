@@ -74,3 +74,9 @@ img {
   top: 10%;
   left: 25%;
 }
+
+@media (orientation: portrait) {
+  main {
+    background-color: white !important;
+  }
+}
