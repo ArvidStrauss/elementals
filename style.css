@@ -75,9 +75,37 @@ img {
   left: 25%;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-  main {
-    background-color: white;
+@media (orientation: portrait) {
+  .circle:nth-child(1) {
+    right: 5%;
+  }
+  .circle:nth-child(2) {
+    right: -2%;
+  }
+  .circle:nth-child(3) {
+    right: -5%;
+  }
+
+  .circle:nth-child(4) {
+    right: -2%;
+  }
+  .circle:nth-child(5) {
+    right: 5%;
+  }
+
+  .circle:nth-child(7) {
+    left: 5%;
+  }
+  .circle:nth-child(8) {
+    left: -2%;
+  }
+  .circle:nth-child(9) {
+    left: -5%;
+  }
+  .circle:nth-child(10) {
+    left: -2%;
+  }
+  .circle:nth-child(11) {
+    left: 5%;
   }
 }
