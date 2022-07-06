@@ -75,8 +75,9 @@ img {
   left: 25%;
 }
 
-@media (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */
   main {
-    background-color: white !important;
+    background-color: white;
   }
 }
