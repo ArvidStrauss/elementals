@@ -3,17 +3,35 @@
   padding: 0;
 }
 
-#main {
+body {
   background-color: black;
+}
+#main {
   background-image: url('./img/Mitte\ mit\ Schrift.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
+
   width: 100vw;
   height: 100vmin;
   position: relative;
   overflow: hidden;
+}
+.close {
+  color: white;
+  opacity: 1;
+  font-size: 3rem;
+}
+.close:hover {
+  color: red;
+}
+.modal-dialog {
+  max-width: 70%;
+}
+.modal-body {
+  background-color: black;
+  margin: 5px;
 }
 .circle {
   position: absolute;
