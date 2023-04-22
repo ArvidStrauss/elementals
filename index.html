@@ -103,13 +103,19 @@
               </button>
               <!-- 16:9 aspect ratio -->
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                <!-- <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe> -->
+
+              <!-- new video placeholder -->
+              <video id="videohtml" width="320" height="240" controls></video>
+
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <script>
       $(document).ready(function () {
@@ -123,13 +129,27 @@
         // when the modal is opened autoplay it
         $('#myModal').on('shown.bs.modal', function (e) {
           // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-          $('#video').attr('src', $videoSrc);
+          // $('#video').attr('src', $videoSrc);
+
+          var videohtml = document.querySelector('#videohtml');
+
+          videohtml.setAttribute('src', $videoSrc);
+          videohtml.setAttribute('type', 'video/mp4');
+          videohtml.play();
+
+          console.log({
+            src: videohtml.getAttribute('src'),
+            type: videohtml.getAttribute('type'),
+          });
+
         });
 
         // stop playing the youtube video when I close the modal
         $('#myModal').on('hide.bs.modal', function (e) {
           // a poor man's stop video
-          $('#video').attr('src', '');
+
+          videohtml.pause();
+          // $('#video').attr('src', '');
         });
       });
     </script>
